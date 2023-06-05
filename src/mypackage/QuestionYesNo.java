@@ -1,9 +1,9 @@
 package mypackage;
 
 import java.util.Scanner;
-
-public class QuestionYesNo{
-    public void qst(String k) {
+//Вопрос о следующем выводе в консоль работы с коллекциями
+public class QuestionYesNo{                   //Сделал static, что бы обращаться через класс, не создавая нового объекта
+    public static void qst(String k) {
     Scanner qst1 = new Scanner(System.in);
     String no;
         System.out.println("");

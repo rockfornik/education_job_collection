@@ -5,7 +5,6 @@ import java.util.List;
 public class EducationJobCollection {
     public static void main(String[] args) {
 
-        QuestionYesNo qs = new QuestionYesNo();
 
         Scanner inEnter = new Scanner(System.in);                                                  //для ввода в консоль
         int a1, a2;
@@ -39,7 +38,7 @@ public class EducationJobCollection {
         }
 
 
-        qs.qst("List");
+        QuestionYesNo.qst("List");
 
         //Работа с коллекцией List(увеличение размера списка)
         List<Integer> list = new ArrayList<>();                                                    //Создал новый список
@@ -83,7 +82,7 @@ public class EducationJobCollection {
         System.out.println("Есть ли 45 в list1: " + list1.contains(45));                     //Узнать есть ли элемент 45
         System.out.println("Есть ли 28 в list1: " + list1.contains(28));                     //Узнать есть ли элемент 28
 
-        qs.qst("Set");
+        QuestionYesNo.qst("Set");
 
         //Работа с коллекцией Set(множество объектов без индекса(но являются уникальными))
         Set<Integer> set1 = new HashSet<>();                                                    //выделил память под Set
@@ -116,7 +115,7 @@ public class EducationJobCollection {
         System.out.println("Проверка есть ли значение 55: " + set1.contains(55));
         System.out.println("Проверка есть ли значение 33: " + set1.contains(33));
 
-        qs.qst("Map");
+        QuestionYesNo.qst("Map");
         //Работа с коллекцией Map(элементы с указанием уникальных ключей и значений))
         System.out.println("");
         Map<Integer, String> map1 = new HashMap<>();
@@ -163,6 +162,7 @@ public class EducationJobCollection {
         for (String i : keys2) {
             System.out.println(map2.get(iterator2.next()) + "; ");
         }
-        System.out.println("Вася " + map2.get("Вася"));
-    }
+        System.out.println("Вася " + map2.get("Вася"));                                 //Вывод значения по ключу "Вася"
+
+}
 }
